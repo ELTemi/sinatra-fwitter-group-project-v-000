@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  validates_presence_of :username, :email
+  validates_presence_of :username, :email, :name
   has_secure_password
   has_many :tweets
 

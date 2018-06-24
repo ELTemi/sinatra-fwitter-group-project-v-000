@@ -1,12 +1,22 @@
 <%= @tweet.content %>
 
+<<<<<<< HEAD
 <form method="post" action="/tweets/<%=@tweet.id%>">
+=======
+<form method="post" action="/tweets/<%=@tweet.id%>/delete">
+>>>>>>> 4c25d72be07f281aa557221cf32b92549b21c2a5
   <input id="hidden" type="hidden" name="_method" value="delete">
 
   <input type="submit" value="Delete Tweet">
 <form>
 
+<<<<<<< HEAD
   <form method="post" action="/tweets/<%=@tweet.id%>/edit">
   <input id="hidden" type="hidden" name="_method" value="patch">
+=======
+  <form method="post" action="/tweets/<%=@tweet.id%>">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  Content: <input type="text" value="<%=@tweet.content%>" name="content">
+>>>>>>> 4c25d72be07f281aa557221cf32b92549b21c2a5
   <input type="submit" value="Edit Tweet">
 </form>
