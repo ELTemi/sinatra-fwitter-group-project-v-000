@@ -42,6 +42,7 @@ class TweetsController < ApplicationController
     else
       redirect '/login'
     end
+  end
 
     get '/tweets/:id/edit' do
       if logged_in?
